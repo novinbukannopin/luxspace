@@ -1,6 +1,8 @@
 import React from "react";
+import useAsync from "../../helpers/hooks/useAsync";
 
 function BrowserRoom() {
+  const { run } = useAsync({ data: { username: "" } });
   return (
     // <!-- START: BROWSE THE ROOM -->
     <section className="flex bg-gray-100 py-16 px-4" id="browse-the-room">
